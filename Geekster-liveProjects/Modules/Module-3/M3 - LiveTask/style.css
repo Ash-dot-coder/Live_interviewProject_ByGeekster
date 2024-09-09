@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    /* background: #29A0B1; */
+    
+    background-image: url("https://img.freepik.com/free-photo/beautiful-japanese-forest-scene_23-2151498115.jpg");
+    /* max-height: fit-content; */
+    overflow: hidden;
+    background-size: cover;
+    /* object-fit: contain; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    height: 100vh;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Header Section */
+nav {
+    padding: 0.61rem;
+}
+
+nav,
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.32rem;
+}
+
+.logo {
+    font-size: 1.789rem;
+}
+
+nav>button {
+    padding: 0.21em 1.43rem;
+    transition: 0.378s ease-in-out;
+}
+
+.lineup:hover {
+    background: rgba(19, 86, 64, 0.557);
+}
+
+.ac {
+    font-size: medium;
+}
+
+li {
+    list-style: none;
+}
+
+nav>ul>h3:hover {
+    animation-name: move;
+    animation-duration: 0.8s;
+}
+
+nav>ul h3:hover {
+    /* background-color: wheat; */
+    /* transform: rotate(180deg); */
+    cursor: pointer;
+    animation-duration: 1.8s;
+    animation-delay: 0.8s;
+    animation-iteration-count: 3;
+}
+
+@keyframes move {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+nav>ul>button {
+    margin-top: -1.989rem;
+}
+
+/* First Part */
+#first,
+#Second {
+    /* width: 98vw; */
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#left>h3 {
+    transform: rotate(90deg);
+}
+
+.icon {
+    transform: rotate(270deg);
+}
+
+#right {
+    width: 58vw;
+    height: 53vh;
+    align-content: center;
+}
+
+#right>.heading::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 4rem;
+    height: 0.12rem;
+    background: tomato;
+}
+
+#right>.heading {
+    color: tomato;
+    position: relative;
+    isolation: isolate;
+    padding-left: 4.87rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+#right>.para {
+    font-size: 5rem;
+    margin: 0.324rem;
+}
+
+.mid button {
+    font-size: 1rem;
+}
+
+button {
+    letter-spacing: 0.032em;
+    background: transparent;
+    border: none;
+    color: currentColor;
+}
+
+.arrow {
+    transition: 0.67s ease-out;
+}
+
+.arrow:hover {
+    transform: translateY(1.102rem);
+    transition: 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+#Second, footer{
+    background: #183D3D;
+    /* background: #0c6767; */
+}
+
+#Second {
+    justify-content: center;
+}
+
+#Second>h1 {
+    font-size: 7.2rem;
+    opacity: 0.15;
+    margin-right: -3.467rem;
+    margin-top: -17rem;
+}
+
+#content>.heading::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 4rem;
+    height: 0.12rem;
+    background: tomato;
+}
+
+#content>.heading {
+    color: tomato;
+    position: relative;
+    isolation: isolate;
+    padding-left: 4.87rem;
+    /* top: -4.283rem; */
+    /* left: 3.468rem; */
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 38vh;
+    margin-right: 2.743rem;
+}
+
+
+#content .vgap {
+    padding: 1.142rem 0;
+}
+
+#head>h1 {
+    font-size: 2.981rem;
+}
+
+#content>.para {
+    font-size: 1.413rem;
+}
+
+.head2 a {
+    font-size: 1.189rem;
+    color: tomato;
+}
+
+#content a {
+    display: flex;
+    align-items: center;
+    gap: 0.42em;
+}
+
+.arrowright {
+    padding-right: 4.22rem;
+    font-size: 0.77em;
+    font-weight: bold;
+    transition: 0.42s ease-in;
+}
+
+.head2:hover {
+    .arrowright {
+        transform: translateX(0.78rem);
+        transition: 0.42s ease-in;
+        cursor: pointer;
+    }
+}
+
+#img>img {
+    width: 26vw;
+    height: 78vh;
+}
+
+
+/* Footer Section */
+.footer-section {
+    width: 98.9vw;
+    height: 46vh;
+    /* background-color: darkgrey; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section ul li {
+    padding: 0.62rem;
+}
+
+.fooup {
+    width: 19.87vw;
+}
+
+.fooup li>.para {
+    font-size: 1.132rem;
+}
+
+.change li:first-child {
+    color: tomato;
+}
+
+.change li {
+    font-size: 1.2rem;
+}
+
+.end {
+    text-align: center;
+    padding: 0.87rem;
+}
